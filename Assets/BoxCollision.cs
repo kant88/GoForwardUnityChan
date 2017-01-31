@@ -14,7 +14,7 @@ public class BoxCollision : MonoBehaviour {
 		
 	}
 	void OnCollisionEnter2D (Collision2D other) {
-		if (other.gameObject.tag == "UnityChan" || other.gameObject.tag == "Cube") {
+		if (other.gameObject.tag == "UnityChan" || other.gameObject.tag == "Cube" || other.gameObject.tag == "Ground") {
 			GetComponent<AudioSource> ().Play ();
 		}
 	}
